@@ -1,0 +1,1009 @@
+Started GET "/" for ::1 at 2021-02-10 20:31:10 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/darshan/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/darshan/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (5.1ms)
+Completed 200 OK in 421ms (Views: 29.7ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-02-10 20:31:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (458.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (81.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateArticles (20210210150240)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210210150240"]]
+  [1m[35m (140.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-10 15:05:04.497603"], ["updated_at", "2021-02-10 15:05:04.497603"]]
+  [1m[35m (208.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-02-10 20:39:14 +0530
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2021-02-11 13:24:33 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/darshan/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/darshan/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (5.2ms)
+Completed 200 OK in 59ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-11 13:24:34 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/darshan/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/darshan/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (5.4ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-02-11 13:24:34 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mArticle Load (14.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2021-02-11 13:32:38 +0530
+Processing by Rails::WelcomeController#index as */*
+  Rendering /home/darshan/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/darshan/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (4.7ms)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 13:33:48 +0530
+Processing by ArticlesController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ArticlesController::Articles):
+  
+app/controllers/articles_controller.rb:4:in `index'
+Started GET "/articles" for 127.0.0.1 at 2021-02-11 13:34:58 +0530
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for ArticlesController):
+  
+actionpack (5.1.7) lib/abstract_controller/base.rb:119:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2021-02-11 13:35:27 +0530
+Processing by ArticlesController#index as */*
+Completed 204 No Content in 0ms
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-02-11 13:36:16 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/articles/index" for 127.0.0.1 at 2021-02-11 13:36:26 +0530
+Processing by ArticlesController#index as */*
+Completed 204 No Content in 1ms
+
+
+Started GET "/articles/index" for 127.0.0.1 at 2021-02-11 13:37:38 +0530
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (19.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 88ms (Views: 22.3ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/articles/index" for ::1 at 2021-02-11 13:37:51 +0530
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (11.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (42.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "t1"], ["content", "c1"], ["created_at", "2021-02-11 08:20:12.753667"], ["updated_at", "2021-02-11 08:20:12.753667"]]
+  [1m[35m (85.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/articles/index" for ::1 at 2021-02-11 13:50:29 +0530
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 13:51:38 +0530
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 13:55:33 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"t2", "content"=>"c2", "article"=>{"title"=>"t2", "content"=>"c2"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/articles_controller.rb:7:in `create'
+Started GET "/articles" for ::1 at 2021-02-11 13:56:20 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"t2", "content"=>"c2", "article"=>{"title"=>"t2", "content"=>"c2"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 13:56:24 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"t2", "content"=>"c2", "article"=>{"title"=>"t2", "content"=>"c2"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/articles_controller.rb:7:in `create'
+Started POST "/articles" for ::1 at 2021-02-11 13:57:56 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"t2", "content"=>"c2", "article"=>{"title"=>"t2", "content"=>"c2"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "t2"], ["content", "c2"], ["created_at", "2021-02-11 08:27:56.187523"], ["updated_at", "2021-02-11 08:27:56.187523"]]
+  [1m[35m (200.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 218ms (Views: 0.6ms | ActiveRecord: 203.4ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 13:58:01 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"t2", "content"=>"c2", "article"=>{"title"=>"t2", "content"=>"c2"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 13:59:08 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"t3", "content"=>"c2", "article"=>{"title"=>"t3", "content"=>"c2"}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/articles_controller.rb:7:in `create'
+Started POST "/articles" for ::1 at 2021-02-11 13:59:33 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"t3", "content"=>"c2", "article"=>{"title"=>"t3", "content"=>"c2"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "t3"], ["content", "c2"], ["created_at", "2021-02-11 08:29:33.051081"], ["updated_at", "2021-02-11 08:29:33.051081"]]
+  [1m[35m (220.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 235ms (Views: 0.6ms | ActiveRecord: 222.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 13:59:44 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"t3", "content"=>"c2", "article"=>{"title"=>"t3", "content"=>"c2"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:18:56 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t3", "content"=>"c2", "article"=>{"title"=>"t3", "content"=>"c2"}}
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 14:19:13 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"t3", "content"=>"c2", "article"=>{"title"=>"t3", "content"=>"c2"}}
+  [1m[36mArticle Load (51.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 65ms (Views: 11.9ms | ActiveRecord: 52.2ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:19:43 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t3", "content"=>"c2", "article"=>{"title"=>"t3", "content"=>"c2"}}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:20:09 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 14:22:03 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.2ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/articles_controller.rb:8:in `[]'
+app/controllers/articles_controller.rb:8:in `create'
+Started POST "/articles" for ::1 at 2021-02-11 14:23:16 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"articl"=>{"title"=>"t4", "content"=>"c2"}, "article"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:8:in `create'
+Started POST "/articles" for ::1 at 2021-02-11 14:23:24 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/articles_controller.rb:8:in `[]'
+app/controllers/articles_controller.rb:8:in `create'
+Started POST "/articles" for ::1 at 2021-02-11 14:23:44 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 500 Internal Server Error in 179ms
+
+
+  
+NameError (undefined local variable or method `article_params' for #<ArticlesController:0x007f3a9c5ed548>
+Did you mean?  article_path):
+  
+app/controllers/articles_controller.rb:7:in `create'
+Started POST "/articles" for ::1 at 2021-02-11 14:24:04 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"article"=>{"title"=>"t4", "content"=>"c2"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (22.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "t4"], ["content", "c2"], ["created_at", "2021-02-11 08:54:04.971608"], ["updated_at", "2021-02-11 08:54:04.971608"]]
+  [1m[35m (276.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 317ms (Views: 0.7ms | ActiveRecord: 301.2ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:24:13 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:24:30 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:24:39 +0530
+Processing by ArticlesController#test as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:25:25 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:25:42 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.3ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/articles_controller.rb:13:in `[]'
+app/controllers/articles_controller.rb:13:in `test'
+Started POST "/articles/test" for ::1 at 2021-02-11 14:25:46 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/articles_controller.rb:13:in `[]'
+app/controllers/articles_controller.rb:13:in `test'
+Started POST "/articles/test" for ::1 at 2021-02-11 14:26:04 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.2ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/articles_controller.rb:13:in `test'
+Started POST "/articles/test" for ::1 at 2021-02-11 14:26:21 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:26:31 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 2.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/articles_controller.rb:13:in `test'
+Started POST "/articles/test" for ::1 at 2021-02-11 14:26:41 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/articles_controller.rb:13:in `test'
+Started POST "/articles/test" for ::1 at 2021-02-11 14:26:59 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:27:10 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:27:25 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c2", "article"=>{"title"=>"t4", "content"=>"c2"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.8ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/articles_controller.rb:13:in `test'
+Started POST "/articles/test" for ::1 at 2021-02-11 14:27:30 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c4", "article"=>{"title"=>"t4", "content"=>"c4"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/articles_controller.rb:13:in `test'
+Started POST "/articles/test" for ::1 at 2021-02-11 14:27:50 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c4", "article"=>{"title"=>"t4", "content"=>"c4"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:28:09 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c4", "article"=>{"title"=>"t4", "content"=>"c4"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:28:27 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c4", "article"=>{"title"=>"t4", "content"=>"c4"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.6ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/articles_controller.rb:13:in `test'
+Started POST "/articles/test" for ::1 at 2021-02-11 14:29:28 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t4", "content"=>"c4", "article"=>{"title"=>"t4", "content"=>"c4"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:29:33 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t412", "content"=>"c4", "article"=>{"title"=>"t412", "content"=>"c4"}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 14:30:01 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t412", "content"=>"c4", "article"=>{"title"=>"t412", "content"=>"c4"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/articles_controller.rb:13:in `test'
+Started POST "/articles/test" for ::1 at 2021-02-11 14:32:58 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"t412", "content"=>"c4", "article"=>{"title"=>"t412", "content"=>"c4"}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 16:31:41 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (235.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 467ms (Views: 230.6ms | ActiveRecord: 235.5ms)
+
+
+Started PUT "/articles/1" for ::1 at 2021-02-11 16:34:52 +0530
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"t412", "content"=>"c1", "id"=>"1", "article"=>{"title"=>"t412", "content"=>"c1"}}
+  [1m[36mArticle Load (197.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "t412"], ["updated_at", "2021-02-11 11:04:53.687061"], ["id", 1]]
+  [1m[35m (110.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 1022ms (Views: 0.5ms | ActiveRecord: 310.5ms)
+
+
+Started PUT "/articles/edit" for ::1 at 2021-02-11 16:36:51 +0530
+Processing by ArticlesController#update as */*
+  Parameters: {"id"=>"edit", "title"=>"t41", "content"=>"c1", "article"=>{"id"=>"edit", "title"=>"t41", "content"=>"c1"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 2.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=edit):
+  
+app/controllers/articles_controller.rb:18:in `update'
+Started GET "/articles" for ::1 at 2021-02-11 16:37:13 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"id"=>1, "title"=>"t41", "content"=>"c1", "article"=>{"id"=>1, "title"=>"t41", "content"=>"c1"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 16:39:23 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"id"=>1, "title"=>"t41", "content"=>"c1", "article"=>{"id"=>1, "title"=>"t41", "content"=>"c1"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 16:39:54 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"id"=>1, "title"=>"t41", "content"=>"c1", "article"=>{"id"=>1, "title"=>"t41", "content"=>"c1"}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 16:40:17 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"id"=>1, "title"=>"t41", "content"=>"c1", "article"=>{"id"=>1, "title"=>"t41", "content"=>"c1"}}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 16:40:19 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"id"=>1, "title"=>"t41", "content"=>"c1", "article"=>{"id"=>1, "title"=>"t41", "content"=>"c1"}}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articles/1" for ::1 at 2021-02-11 16:44:39 +0530
+Processing by ArticlesController#destroy as */*
+  Parameters: {"id"=>"1", "title"=>"t41", "content"=>"c1", "article"=>{"id"=>"1", "title"=>"t41", "content"=>"c1"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 1]]
+  [1m[35m (189.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 202ms (ActiveRecord: 190.9ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 16:44:47 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"id"=>1, "title"=>"t41", "content"=>"c1", "article"=>{"id"=>1, "title"=>"t41", "content"=>"c1"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/1" for ::1 at 2021-02-11 16:45:01 +0530
+Processing by ArticlesController#destroy as */*
+  Parameters: {"id"=>"1", "title"=>"t41", "content"=>"c1", "article"=>{"id"=>"1", "title"=>"t41", "content"=>"c1"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:32:in `destroy'
+Started DELETE "/articles/2" for ::1 at 2021-02-11 16:45:06 +0530
+Processing by ArticlesController#destroy as */*
+  Parameters: {"id"=>"2", "title"=>"t41", "content"=>"c1", "article"=>{"id"=>"2", "title"=>"t41", "content"=>"c1"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 2]]
+  [1m[35m (225.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 233ms (ActiveRecord: 228.0ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 16:45:17 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"id"=>1, "title"=>"t41", "content"=>"c1", "article"=>{"id"=>1, "title"=>"t41", "content"=>"c1"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles/delete" for ::1 at 2021-02-11 16:45:40 +0530
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>3, "article"=>{"id"=>3}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 3]]
+  [1m[35m (141.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 143.7ms)
+
+
+  
+NoMethodError (undefined method `redirect' for #<ArticlesController:0x0055c54103e308>
+Did you mean?  redirect_to):
+  
+app/controllers/articles_controller.rb:37:in `delete'
+Started POST "/articles/delete" for ::1 at 2021-02-11 16:46:01 +0530
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>3, "article"=>{"id"=>3}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 2.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=3):
+  
+app/controllers/articles_controller.rb:36:in `delete'
+Started GET "/articles" for ::1 at 2021-02-11 16:46:09 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"id"=>3, "article"=>{"id"=>3}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 16:46:49 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"t5", "content"=>"c5", "article"=>{"title"=>"t5", "content"=>"c5"}}
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `article_params' for #<ArticlesController:0x007f3a9c4f5708>
+Did you mean?  article_path):
+  
+app/controllers/articles_controller.rb:7:in `create'
+Started POST "/articles" for ::1 at 2021-02-11 16:47:06 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"t5", "content"=>"c5", "article"=>{"title"=>"t5", "content"=>"c5"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "t5"], ["content", "c5"], ["created_at", "2021-02-11 11:17:06.531830"], ["updated_at", "2021-02-11 11:17:06.531830"]]
+  [1m[35m (180.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 193ms (Views: 0.6ms | ActiveRecord: 182.5ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 16:47:11 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"t5", "content"=>"c5", "article"=>{"title"=>"t5", "content"=>"c5"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles/delete" for ::1 at 2021-02-11 16:47:32 +0530
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>5, "article"=>{"id"=>5}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 5]]
+  [1m[35m (138.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 145ms (ActiveRecord: 139.9ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 16:47:39 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"id"=>5, "article"=>{"id"=>5}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 16:49:18 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"id"=>5, "article"=>{"id"=>5}}
+Unpermitted parameter: :id
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 16:49:55 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"title test", "content"=>"Cont123", "article"=>{"title"=>"title test", "content"=>"Cont123"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 16:50:18 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"title test", "content"=>"Cont123", "article"=>{"title"=>"title test", "content"=>"Cont123"}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 16:51:02 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"title test", "content"=>"Cont123", "article"=>{"title"=>"title test", "content"=>"Cont123"}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 16:51:19 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"title test", "content"=>"Cont123", "article"=>{"title"=>"title test", "content"=>"Cont123"}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.8ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/articles_controller.rb:8:in `create'
+Started POST "/articles/test" for ::1 at 2021-02-11 16:51:58 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"title test", "content"=>"Cont123", "article"=>{"title"=>"title test", "content"=>"Cont123"}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/articles/test" for ::1 at 2021-02-11 16:52:11 +0530
+Processing by ArticlesController#test as */*
+  Parameters: {"title"=>"title test", "content"=>"Cont123", "article"=>{"title"=>"title test", "content"=>"Cont123"}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 16:52:37 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"title test", "content"=>"Cont123", "article"=>{"title"=>"title test", "content"=>"Cont123"}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/articles_controller.rb:8:in `create'
+Started POST "/articles" for ::1 at 2021-02-11 16:52:49 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"title test", "content"=>"Cont123", "article"=>{"title"=>"title test", "content"=>"Cont123"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "title test"], ["content", "Cont123"], ["created_at", "2021-02-11 11:22:49.955617"], ["updated_at", "2021-02-11 11:22:49.955617"]]
+  [1m[35m (148.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 172ms (Views: 0.7ms | ActiveRecord: 151.4ms)
+
+
+Started POST "/articles/edit" for ::1 at 2021-02-11 16:55:37 +0530
+Processing by ArticlesController#edit as */*
+  Parameters: {"id"=>6, "title"=>"title test122", "content"=>"Cont123", "article"=>{"id"=>6, "title"=>"title test122", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Unpermitted parameter: :id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "title test122"], ["updated_at", "2021-02-11 11:25:37.136764"], ["id", 6]]
+  [1m[35m (101.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 122ms (Views: 1.0ms | ActiveRecord: 104.6ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 17:41:32 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"title122", "content"=>"Cont123", "article"=>{"title"=>"title122", "content"=>"Cont123"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "title122"], ["content", "Cont123"], ["created_at", "2021-02-11 12:11:32.213194"], ["updated_at", "2021-02-11 12:11:32.213194"]]
+  [1m[35m (118.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000index
+Completed 302 Found in 138ms (ActiveRecord: 122.4ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 17:41:39 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"title122", "content"=>"Cont123", "article"=>{"title"=>"title122", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 17:42:12 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"title122213", "content"=>"Cont123", "article"=>{"title"=>"title122213", "content"=>"Cont123"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "title122213"], ["content", "Cont123"], ["created_at", "2021-02-11 12:12:12.715043"], ["updated_at", "2021-02-11 12:12:12.715043"]]
+  [1m[35m (139.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000articles#index
+Completed 302 Found in 157ms (ActiveRecord: 142.1ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 17:57:26 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"title122213", "content"=>"Cont123", "article"=>{"title"=>"title122213", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 17:57:42 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"title1777", "content"=>"Cont123", "article"=>{"title"=>"title1777", "content"=>"Cont123"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "title1777"], ["content", "Cont123"], ["created_at", "2021-02-11 12:27:42.125525"], ["updated_at", "2021-02-11 12:27:42.125525"]]
+  [1m[35m (199.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 206ms (Views: 0.6ms | ActiveRecord: 201.1ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 17:57:55 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"title1777", "content"=>"Cont123", "article"=>{"title"=>"title1777", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 17:59:32 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"777", "content"=>"Cont123", "article"=>{"title"=>"777", "content"=>"Cont123"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "777"], ["content", "Cont123"], ["created_at", "2021-02-11 12:29:32.160555"], ["updated_at", "2021-02-11 12:29:32.160555"]]
+  [1m[35m (163.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 165.4ms)
+
+
+  
+NameError (undefined local variable or method `created' for #<ArticlesController:0x007f3a9c1dd368>
+Did you mean?  create):
+  
+app/controllers/articles_controller.rb:10:in `create'
+Started POST "/articles" for ::1 at 2021-02-11 18:00:07 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"777", "content"=>"Cont123", "article"=>{"title"=>"777", "content"=>"Cont123"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "777"], ["content", "Cont123"], ["created_at", "2021-02-11 12:30:07.449485"], ["updated_at", "2021-02-11 12:30:07.449485"]]
+  [1m[35m (145.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 160ms (Views: 1.0ms | ActiveRecord: 148.0ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 18:03:55 +0530
+  
+SyntaxError (/home/darshan/Desktop/rails_projects/api1/app/models/article.rb:2: syntax error, unexpected ':', expecting =>
+nce: true, length: { minimum : 3}
+                              ^):
+  
+app/models/article.rb:2: syntax error, unexpected ':', expecting =>
+Started POST "/articles" for ::1 at 2021-02-11 18:05:53 +0530
+  
+SyntaxError (/home/darshan/Desktop/rails_projects/api1/app/models/article.rb:2: syntax error, unexpected ':', expecting =>
+nce: true, length: { minimum : 3}
+                              ^):
+  
+app/models/article.rb:2: syntax error, unexpected ':', expecting =>
+Started POST "/articles" for ::1 at 2021-02-11 18:07:03 +0530
+  
+SyntaxError (/home/darshan/Desktop/rails_projects/api1/app/models/article.rb:2: syntax error, unexpected ':', expecting =>
+ce: :true, length: { minimum : 3}
+                              ^):
+  
+app/models/article.rb:2: syntax error, unexpected ':', expecting =>
+Started POST "/articles" for ::1 at 2021-02-11 18:08:33 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"title new", "content"=>"Cont123", "article"=>{"title"=>"title new", "content"=>"Cont123"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "title new"], ["content", "Cont123"], ["created_at", "2021-02-11 12:38:33.654237"], ["updated_at", "2021-02-11 12:38:33.654237"]]
+  [1m[35m (132.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 153ms (Views: 0.6ms | ActiveRecord: 134.7ms)
+
+
+Started POST "/articles" for ::1 at 2021-02-11 18:08:41 +0530
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"t", "content"=>"Cont123", "article"=>{"title"=>"t", "content"=>"Cont123"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 158ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Title is too short (minimum is 3 characters)):
+  
+app/controllers/articles_controller.rb:7:in `create'
+Started GET "/articles" for ::1 at 2021-02-11 18:13:47 +0530
+  
+SyntaxError (/home/darshan/Desktop/rails_projects/api1/app/controllers/articles_controller.rb:39: syntax error, unexpected ':', expecting keyword_end
+		head: deleted
+		     ^):
+  
+app/controllers/articles_controller.rb:39: syntax error, unexpected ':', expecting keyword_end
+Started GET "/articles" for ::1 at 2021-02-11 18:14:14 +0530
+  
+SyntaxError (/home/darshan/Desktop/rails_projects/api1/app/controllers/articles_controller.rb:39: syntax error, unexpected ':', expecting keyword_end
+		head: deleted
+		     ^
+/home/darshan/Desktop/rails_projects/api1/app/controllers/articles_controller.rb:44: syntax error, unexpected ':', expecting keyword_end
+		head: deleted
+		     ^):
+  
+app/controllers/articles_controller.rb:39: syntax error, unexpected ':', expecting keyword_end
+app/controllers/articles_controller.rb:44: syntax error, unexpected ':', expecting keyword_end
+Started GET "/articles" for ::1 at 2021-02-11 18:14:35 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"t", "content"=>"Cont123", "article"=>{"title"=>"t", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/articles/4" for ::1 at 2021-02-11 18:14:44 +0530
+Processing by ArticlesController#destroy as */*
+  Parameters: {"title"=>"t", "content"=>"Cont123", "id"=>"4", "article"=>{"title"=>"t", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 4]]
+  [1m[35m (167.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 170.2ms)
+
+
+  
+ArgumentError (Unrecognized status code :deleted):
+  
+app/controllers/articles_controller.rb:39:in `destroy'
+Started DELETE "/articles/4" for ::1 at 2021-02-11 18:15:18 +0530
+Processing by ArticlesController#destroy as */*
+  Parameters: {"title"=>"t", "content"=>"Cont123", "id"=>"4", "article"=>{"title"=>"t", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 1.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=4):
+  
+app/controllers/articles_controller.rb:38:in `destroy'
+Started GET "/articles" for ::1 at 2021-02-11 18:15:32 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"t", "content"=>"Cont123", "article"=>{"title"=>"t", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/articles/6" for ::1 at 2021-02-11 18:15:39 +0530
+Processing by ArticlesController#destroy as */*
+  Parameters: {"title"=>"t", "content"=>"Cont123", "id"=>"6", "article"=>{"title"=>"t", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 6]]
+  [1m[35m (168.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 175ms (ActiveRecord: 170.7ms)
+
+
+Started GET "/articles" for ::1 at 2021-02-11 18:15:52 +0530
+Processing by ArticlesController#index as */*
+  Parameters: {"title"=>"t", "content"=>"Cont123", "article"=>{"title"=>"t", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/articles/7" for ::1 at 2021-02-11 18:27:46 +0530
+Processing by ArticlesController#destroy as */*
+  Parameters: {"title"=>"t", "content"=>"Cont123", "id"=>"7", "article"=>{"title"=>"t", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 7]]
+  [1m[35m (181.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 200ms (ActiveRecord: 184.2ms)
+
+
+Started DELETE "/articles/7" for ::1 at 2021-02-11 18:27:50 +0530
+Processing by ArticlesController#destroy as */*
+  Parameters: {"title"=>"t", "content"=>"Cont123", "id"=>"7", "article"=>{"title"=>"t", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=7):
+  
+app/controllers/articles_controller.rb:43:in `destroy'
+Started DELETE "/articles/1" for ::1 at 2021-02-11 18:28:06 +0530
+Processing by ArticlesController#destroy as */*
+  Parameters: {"title"=>"t", "content"=>"Cont123", "id"=>"1", "article"=>{"title"=>"t", "content"=>"Cont123"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:43:in `destroy'
